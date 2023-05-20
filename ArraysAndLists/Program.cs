@@ -11,7 +11,7 @@ namespace ArraysAndLists
 
             // Create an int Array and populate numbers 1-10
 
-            var digits = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var digits = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
 
             /* Create two Lists of type int.
@@ -32,7 +32,7 @@ namespace ArraysAndLists
              * or the odds List
              */
 
-            foreach (var dig in digits)
+            foreach (int dig in digits)
             {
                 if(dig % 2 == 0)
                 {
@@ -52,13 +52,13 @@ namespace ArraysAndLists
              *
              * Try to be creative in your display
              */
-            foreach (var digi in evens)
+            foreach (int dig in evens)
             {
-                Console.WriteLine($"{digi} is on the evens list");
+                Console.WriteLine($"{dig} is on the evens list");
             }
-            foreach (var digi in odds)
+            foreach (int dig in odds)
             {
-                Console.WriteLine($"{digi} is a weird, I mean, odd number");
+                Console.WriteLine($"{dig} is a weird, I mean, odd number");
             }
 
 
